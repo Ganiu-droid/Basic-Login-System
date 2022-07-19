@@ -7,6 +7,11 @@
             <div class="title">
                 <h2 class="font-weight-bold">Login System</h2>
                 <span>Login for the existing User</span>
+                <% if(locals.logout){ %>
+                    <div class="alter alert-success text-center">
+                        <%=logout%>
+                    </div>
+                <% } %>
             </div>
 
             <form action="route/login" method="POST" class="pt-3">
